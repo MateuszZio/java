@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function wiezowiec(nazwa_k,wysokosc_k,architekt_k)
+			{
+			this.nazwa=nazwa_k;
+			this.wysokosc=wysokosc_k;
+			this.architekt=architekt_k;
+			}
+			wiezowiec.prototype.wypisz_ziolkowski = function () 
+			{
+			alert(this.nazwa + ' ' + this.wysokosc+ ' ' + this.architekt);
+			};
+			var wiezowiec1 = new wiezowiec('WTC1', "417", "Minoru Yamasaki"); 
+			var wiezowiec2 = new wiezowiec('WTC2', '415', 'Minoru Yamasaki');
+			wiezowiec1.wypisz_ziolkowski(); 
+			wiezowiec2.wypisz_ziolkowski();
+			document.write("dostęp do właściwości"+"<br>");
+			document.write("wiezowiec pierwszy"+" "+wiezowiec1.nazwa+" "+wiezowiec1.wysokosc+" "+wiezowiec1.architekt);
+		</script>
+	</head>
+		<body>
+			<br>
+			programowanie obiektowe
+		</body>
+</html>
