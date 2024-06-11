@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_Ziolkowski()
+ {
+ window.close()
+ }
+21
+ </script>
+</head>
+<body>
+ <form>
+ 
+<textarea name="Ziolkowski" cols="80" rows="25" disabled>
+
+<!DOCTYPE html> 
+ <head> 
+ <title>Sprawdzenie danych</title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+ do {
+var a_zio=parseFloat(prompt("a=",""));
+var b_zio=parseFloat(prompt("b=",""));
+var c_zio=parseFloat(prompt("c=",""));
+document.write("trójkąt nie zamyka się"+"<br>")
+ }
+ while 
+ (!((a>0)&&(b>0)&&(c>0)&&(a+b>c)&&(a+c>b)&&(b+c>a)));
+ document.write("trójkąt się zamyka");
+ </script>
+</div>
+</body>
+</html>
+
+</textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_Ziolkowski()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

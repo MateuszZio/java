@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+</head>
+
+<body>
+  <input id="btn" type="button" value="start" onclick="findPrimes()">
+  <div id="aa"></div>
+  <script>
+    const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+    async function findPrimes() {
+      const field = document.getElementById("aa");
+      let buffer = '';
+
+      for (let i = 32; i < 47; i++) {
+        if (i!== 0 && i % 3 === 0) {
+          await wait(300);
+          field.innerHTML += buffer;
+          buffer = '';
+          alert('Aby kontynuować, naciśnij dowolny klawisz');
+        }
+        const W = i ** 2 + i + 41;
+        buffer += "i=" + i + " w(" + i + ")=" + W + "<br><hr>";
+      }
+      field.innerHTML += buffer;
+    }
+  </script>
+</body>
+</html>
